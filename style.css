@@ -1,0 +1,112 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fb; /* Soft background color */
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+  }
+  
+  /* Game Header */
+  h1 {
+    font-size: 3rem;
+    color: #4CAF50;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Start Button Styling */
+  #start-game {
+    background-color: #FF5722; /* Bright color */
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #start-game:hover {
+    background-color: #e64a19; /* Darker shade on hover */
+  }
+  
+  /* Timer and Matches Info */
+  .text-center span {
+    font-size: 1.25rem;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Game Board */
+  #game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  
+  /* Card Styling */
+  .card {
+    width: 100px;
+    height: 100px;
+    background-color: #FFEB3B; /* Default card color */
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #555;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card.flip {
+    background-color: #ffffff; /* Card turns white when flipped */
+    transform: rotateY(180deg);
+  }
+  
+  .card.matched {
+    background-color: #4CAF50; /* Green for matched cards */
+    color: white;
+    cursor: not-allowed; /* Disable clicking on matched cards */
+  }
+  
+  /* Styling for the Symbols */
+  .card::before {
+    content: "";
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Hover Effects for Cards */
+  .card:hover {
+    transform: scale(1.1); /* Slightly enlarge cards on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Timer Styling */
+  #timer {
+    color: #FF5722;
+    font-size: 1.5rem;
+  }
+  
+  /* Match Count Styling */
+  #match-count {
+    color: #4CAF50;
+    font-size: 1.5rem;
+  }
+  
