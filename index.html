@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Matching Game</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100">
+
+  <div class="container mx-auto p-6">
+    <h1 class="text-4xl font-bold text-center mb-6">Memory Matching Game</h1>
+    <div class="flex justify-center items-center mb-6">
+      <button id="start-game" class="bg-blue-500 text-white px-4 py-2 rounded">Start New Game</button>
+    </div>
+    <div id="game-board" class="grid grid-cols-4 gap-4 justify-center"></div>
+    <div class="text-center mt-6">
+      <span>Time: <span id="timer">00:00</span></span>
+      <span class="ml-4">Matches: <span id="match-count">0</span></span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
